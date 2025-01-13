@@ -3,12 +3,16 @@
 public class Main {
     public static void main(String[] args) {
    
-    Box obj = new Box();
+    Box obj = new Box(10, 10, 10);
 
     
-    int result = obj.square(45);
+    double vol;
 
-    System.out.println(result);
+    vol = obj.volume();
+
+    System.out.println(vol);
+
+   
 
 
       

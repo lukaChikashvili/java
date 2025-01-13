@@ -2,19 +2,11 @@
 
 public class Main {
     public static void main(String[] args) {
-   
-    Box obj = new Box(10, 10, 10);
 
-    
-    double vol;
+       
+      Factorial f = new Factorial();
 
-    vol = obj.volume();
-
-    System.out.println(vol);
-
-   
-
-
+      System.out.println("Factorial of 3 is " + f.fact(3));
       
     }
 }

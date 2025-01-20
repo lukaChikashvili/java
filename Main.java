@@ -1,25 +1,20 @@
-
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+    
+      int[] nums = {3, 4, 5, 12};
+      System.out.println(Arrays.toString(nums));
 
-      A superOb = new A();
-      B subOb = new B();
+      change(nums);
+      System.out.println(Arrays.toString(nums));
 
- superOb.i = 10;
- superOb.j = 20;
- System.out.println("Contents of superOb: ");
- superOb.showij();
- System.out.println();
 
- subOb.i = 7;
- subOb.j = 8;
- subOb.k = 9;
- System.out.println("Contents of subOb: ");
- subOb.showij();
- subOb.showk();
- System.out.println();
- System.out.println("Sum of i, j and k in subOb:");
- subOb.sum();
+
+    }
+
+    static void change(int[] arr) {
+      arr[0] = 99;
+
     }
 }

@@ -1,34 +1,39 @@
 
-
 public class Main {
     public static void main(String[] args) {
-    
-    
-       // linear search
-       int[] nums = {23, 45, 1, 2, 8, 19, -3, 16, -11, 28};
-       int target = 19;
-       int ans = linearSearch(nums, target);
-
-       System.out.println(ans);
-
-
+       String name = "luka";
+       char target = 'a';
+       System.out.println(search(name, target));
+       System.out.println(search2(name, target));
     }
 
-    static int linearSearch(int[] arr, int target) {
-        
-      if(arr.length == 0) {
-        return -1;
+    static boolean search2(String str, char target) {
+      if(str.length() == 0) {
+        return false;
       }
 
-      for(int i = 0; i < arr.length; i++) {
-         
-        if(arr[i] == target) {
-          return i;
+      // for each loop
+      for(char ch : str.toCharArray()) {
+        if(target == ch) {
+          return true;
         }
       }
 
-      return -1;
+      return false;
     }
 
-   
+
+      static boolean search(String str, char target) {
+        if(str.length() == 0) {
+          return false;
+        }
+
+        for(int i = 0; i < str.length(); i++) {
+          if(target == str.charAt(i)) {
+            return true;
+          }
+        }
+
+        return false;
+      }
 }

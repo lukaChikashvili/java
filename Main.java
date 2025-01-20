@@ -1,20 +1,34 @@
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
     
-      int[] nums = {3, 4, 5, 12};
-      System.out.println(Arrays.toString(nums));
+    
+       // linear search
+       int[] nums = {23, 45, 1, 2, 8, 19, -3, 16, -11, 28};
+       int target = 19;
+       int ans = linearSearch(nums, target);
 
-      change(nums);
-      System.out.println(Arrays.toString(nums));
+       System.out.println(ans);
 
-
-
-    }
-
-    static void change(int[] arr) {
-      arr[0] = 99;
 
     }
+
+    static int linearSearch(int[] arr, int target) {
+        
+      if(arr.length == 0) {
+        return -1;
+      }
+
+      for(int i = 0; i < arr.length; i++) {
+         
+        if(arr[i] == target) {
+          return i;
+        }
+      }
+
+      return -1;
+    }
+
+   
 }

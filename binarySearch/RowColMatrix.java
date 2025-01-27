@@ -25,6 +25,7 @@ public class RowColMatrix {
 
             if(matrix[row][col] < target) {
                 row++;
+                
             }else {
                 col--;
             }

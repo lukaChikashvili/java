@@ -6,6 +6,7 @@ public class Patterns {
         //pattern2(4);
         //pattern3(5);
         //pattern4(4);
+        // pattern5(5);
         
     }
 

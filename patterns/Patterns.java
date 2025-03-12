@@ -3,7 +3,8 @@ package patterns;
 public class Patterns {
     public static void main(String[] args) {
         //pattern1(4);
-        pattern2(4);
+        //pattern2(4);
+        pattern3(5);
         
     }
 
@@ -39,6 +40,24 @@ public class Patterns {
 
         System.out.println();
        }
+    }
+
+
+    // pattern 3
+    /*    * * * * * 
+          * * * * 
+          * * *
+          * *
+          *                */
+
+    static void pattern3(int n) {
+        for(int row = 1; row <= n; row++) {
+            for(int col = 1; col <= n-row+1; col++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
     }
 
 

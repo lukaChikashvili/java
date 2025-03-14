@@ -33,6 +33,7 @@ public class Leetcode1342 {
 
         if(num == 0) {
             return steps;
+            
         }
 
         if(num % 2 == 0) {

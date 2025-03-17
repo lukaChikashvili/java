@@ -12,12 +12,7 @@ public class IsSorted {
             return true;
           }
 
-          if(arr[index] < arr[index + 1]) {
-            
-             return sorted(arr, index + 1);
-          }else {
-            return false;
-          }
+          return arr[index] < arr[index + 1] && sorted(arr, index + 1);
 
           
     }
